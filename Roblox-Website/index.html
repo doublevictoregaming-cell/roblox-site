@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roblox Engine</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="loader">
+      <h1>Loading Roblox Engine...</h1>
+    </div>
+
+    <canvas id="particles" aria-hidden="true"></canvas>
+
+    <header>
+      <div class="logo">Roblox <span>Engine</span></div>
+      <div class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+        ☰
+      </div>
+      <nav id="nav">
+        <a href="#about">About</a>
+        <a href="#stats">Impact</a>
+        <a href="#features">Features</a>
+        <a href="#community">Community</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme">
+          🌗
+        </button>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Roblox Engine</h1>
+      <p id="typing" aria-live="polite"></p>
+      <p>
+        A universe where creators build immersive worlds, share experiences, and
+        connect millions of players through imagination.
+      </p>
+    </section>
+
+    <section id="about" class="reveal">
+      <h2>About Roblox</h2>
+      <p>
+        Roblox is a global platform that combines a powerful game engine with a
+        vibrant creator community. From casual experiences to competitive
+        adventures, Roblox empowers anyone to design, play, and socialize in
+        interactive 3D worlds.
+      </p>
+    </section>
+
+    <section id="stats" class="reveal">
+      <h2>Creator Impact</h2>
+      <div class="stats">
+        <div class="stat">
+          <h3 class="counter" data-target="200">0</h3>
+          <p>Countries Reached</p>
+        </div>
+        <div class="stat">
+          <h3 class="counter" data-target="50">0</h3>
+          <p>Million Experiences Built</p>
+        </div>
+        <div class="stat">
+          <h3 class="counter" data-target="40">0</h3>
+          <p>Billion Hours Played</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="reveal">
+      <h2>Engine Highlights</h2>
+      <div class="cards">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=500&q=80"
+            alt="Creators collaborating"
+          />
+          <h3>Studio Tools</h3>
+          <p>
+            Build worlds with Roblox Studio, featuring terrain sculpting, UI
+            design, and real-time testing.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=500&q=80"
+            alt="Lines of code on a screen"
+          />
+          <h3>Lua Scripting</h3>
+          <p>
+            Bring experiences to life with Lua, an approachable scripting
+            language for gameplay and automation.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1515165562835-c4c0c0f0ea3d?auto=format&fit=crop&w=500&q=80"
+            alt="Friends playing together"
+          />
+          <h3>Social Play</h3>
+          <p>
+            Connect players through multiplayer servers, chat, and events that
+            keep communities thriving.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="community" class="reveal">
+      <h2>Creator Community</h2>
+      <p>
+        Roblox thrives because of creators, developers, and players who share
+        ideas, run live events, and collaborate on new genres. The Roblox Engine
+        helps those creators turn imagination into interactive realities.
+      </p>
+    </section>
+
+    <section id="contact" class="reveal">
+      <h2>Stay Connected</h2>
+      <form>
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea rows="4" placeholder="Favorite Roblox experience"></textarea>
+        <button type="submit" onclick="playSound()">Join the Community</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>Roblox Engine • Built for creators and players.</p>
+    </footer>
+
+    <audio id="clickSound">
+      <source
+        src="https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
